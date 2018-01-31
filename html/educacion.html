@@ -15,12 +15,11 @@
       <h2>Gonzalo Gabriel Estrella Tello</h2>
       <h3>Quito, 29 de Marzo de 1979</h3>
       <a href="../index.html">Inicio</a></br>
-      <a href="html/educacion.html">Educación</a></br>
-      <a href="html/experiencia.html">Experiencia</a></br>
+      <a href="experiencia.html">Experiencia</a></br>
     </header>
     <section>
       <h2>Educación</h2>
-      <table border="2">
+      <table border="1"  cellspacing="0">
         <thead>
           <tr>
             <th>
@@ -82,6 +81,40 @@
           </tr>
         </tbody>
       </table>
+      <h2>Agregar Estudios</h2>
+      <form>
+        <fieldset>
+          <p>
+            <label for="anio"><strong>Año:</strong></label>
+            <select name="anio">
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+            </select>
+          </p>
+          <p>
+            <label for="institucion"><strong>Institución:</strong></label>
+            <input type="text" name="institucion" id="institucion" required>
+          </p>
+          <p>
+            <label for="lugar"><strong>Lugar:</strong></label>
+            <textarea name="lugar" rows="4" cols="40" id="lugar"></textarea>
+          </p>
+          <p>
+            <label for="culmino"><strong>¿Culminó?</strong></label>
+            <input type="radio" name="culminoSi" id="culmino">Si
+            <input type="radio" name="culminoNo" id="culmino">No
+          </p>
+          <p>
+            <input type="submit" name="enviar" value="Enviar">
+          </p>
+        </fieldset>
+      </form>
       <footer>
         <p>
           <h3>Información de contacto</h3>
